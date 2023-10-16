@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "flv_unhook",
+  "version": "1.0",
+  "description": "remove kudasai adds and comment section in video player",
+  "permissions": ["activeTab" ],
+  "content_scripts": [
+   {
+    "matches": ["https://*.animeflv.net/ver/*"],
+     "js": ["content-script.js"]
+   }
+ ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+
+}
